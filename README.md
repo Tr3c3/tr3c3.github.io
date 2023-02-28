@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,6 +6,21 @@
 	<title>Fulano de Tal - CV</title>
 </head>
 <style>
+.navbar-nm .personal-nm (max-width: 600px)
+{
+display:"none";
+.navbar-nm .personal-nm (min-width: 601px)
+{
+display:"block";
+
+.navbar-m .personal-m (max-width: 600px)
+{
+display:"block";
+}
+.navbar-m .personal-m (min-width: 601px)
+{
+display:"none";
+}
 
 </style>
 <body>
