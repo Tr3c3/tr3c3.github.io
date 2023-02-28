@@ -5,30 +5,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fulano de Tal - CV</title>
 </head>
-<style>
-.navbar-nm .personal-nm (max-width: 600px)
-{
-display:"none";
-.navbar-nm .personal-nm (min-width: 601px)
-{
-display:"block";
 
-.navbar-m .personal-m (max-width: 600px)
-{
-display:"block";
+<style>
+@media (max-width: 600px) {
+	#navbar-m, #personal-m {
+		display: block;
+	}
+	#navbar-nm, #personal-nm {
+		display: none;
+	}
 }
-.navbar-m .personal-m (min-width: 601px)
-{
-display:"none";
+@media (min-width: 601px) {
+	#navbar-m, #personal-m {
+		display: none;
+	}
+	#navbar-nm, #personal-nm {
+		display: block;
+	}
 }
+
 
 </style>
 <body>
 	<div class="container-fluid" id="header"><h1>Currículum Vitae</h1></div>
 	<div class="container" id="personal-nm"><p>Datos personales en columna izquierda (non-mobile)</p></div>
 	<div class="container-fluid" id="navbar-nm"><p>Barra de navegación (non-mobile)</p></div>
-	<div class="container-fluid" id="navbar-m" style="display:none"><p>Barra de navegación (mobile)</p></div>
-	<div class="container" id="personal-m" style="display:none"><p>Datos personales (mobile)</p></div>
+	<div class="container-fluid" id="navbar-m"><p>Barra de navegación (mobile)</p></div>
+	<div class="container" id="personal-m"><p>Datos personales (mobile)</p></div>
 	<div class="container" id="workexp"><p>Experiencia laboral</p></div>
 	<div class="container" id="studies"><p>Estudios cursados</p></div>
 	<div class="container" id="skills"><p>Habilidades</p></div>
