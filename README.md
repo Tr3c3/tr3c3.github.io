@@ -7,11 +7,19 @@
 	<link rel="stylesheet" href="cv.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<script src="https://kit.fontawesome.com/107b6cb2e0.js" crossorigin="anonymous"></script>
+	<script>
+		function toggleDarkMode() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+		}
+	</script>
 </head>
 
 <body>
 	<div class="header-block">
-		<h2 class="header">Liam Moreno</h2> <img class="profile-pic" src="https://randomuser.me/api/portraits/men/71.jpg"></img></div>
+		<h2 class="header">Liam Moreno</h2>
+		<img class="profile-pic" src="https://randomuser.me/api/portraits/men/71.jpg"></img>
+	</div>
 	<div class="desktop" id="contact-nm">
 		<h4>Contacto</h4>
 		<p><i class="fa-solid fa-house"></i> Balcarce 50</p>
@@ -19,8 +27,7 @@
 		<p><i class="fa-solid fa-envelope"></i> liam.moreno@example.com</p>	
 	</div>
 	<div class="cv-body">
-		<div class="desktop" id="navbar-nm"><p><a href="#profile">Perfil</a> <a href="#workexp">Experiencia Laboral</a> <a href="#studies">Formación</a> <a href="#languages">Idiomas</a> <a href="#skills">Aptitudes</a></p></div>
-		<div class="mobile" id="navbar-m"><p><a href="#profile">Perfil</a> <a href="#workexp">Experiencia Laboral</a> <a href="#studies">Formación</a> <a href="#languages">Idiomas</a> <a href="#skills">Aptitudes</a> <a href="#contact-m">Contacto</a></p></div>
+		<div class="navbar"><p> <button class="darkmode-switch" type="button" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button><a href="#profile">Perfil</a> <a href="#workexp">Experiencia Laboral</a> <a href="#studies">Formación</a> <a href="#languages">Idiomas</a> <a href="#skills">Aptitudes</a> <a class="mobile" href="#contact-m">Contacto</a></p></div>
 		<div id="profile" class="cv-body-section">
 			<h2>Perfil</h2>
 			<p>Trabajador Social con 4 años de experiencia en proyectos colectivos. Mi objetivo es lograr que los jóvenes obtengan acceso a la educación superior mediante logros deportivos.</p>
@@ -28,7 +35,7 @@
 		<div id="workexp" class="cv-body-section">
 			<h2>Experiencia laboral</h2>
 			<h4>Trabajador Social</h4>
-			<p><bold>México DF, México</bold> <span class="job-timespan"> | 2022 — Actualmente</span></p>
+			<p><bold>México DF, México</bold> <span class="timespan"> | 2022 — Actualmente</span></p>
 			<ul>
 				<li>Coordinador y mediador entre los equipos de ayuda psicológica a jóvenes y niños en exclusión social.</li>
 				<li>Velar por la salud mental del equipo y de miembros involucrados en proyectos.</li>
@@ -37,14 +44,14 @@
 				<li>Programar diferentes actividades extracurriculares en los involucrados.</li>
 			</ul>
 			<h4>Trabajador Social</h4>
-			<p><bold>México DF, México</bold> <span class="job-timespan"> | 2020 — 2022</span></p>
+			<p><bold>México DF, México</bold> <span class="timespan"> | 2020 — 2022</span></p>
 			<ul>
 				<li>Funciones para seguimientos de casos para jóvenes con problemas de adicciones.</li>
 				<li>Capacitaciones e integración vinculadas a medidas preventivas.</li>
 				<li>Recopilación de evidencias para auditorías y programas sociales.</li>
 			</ul>
 			<h4>Trabajador Social (Prácticas)</h4>
-			<p><bold>Zaragoza, España</bold> <span class="job-timespan"> | 2019 — 2020</span></p>
+			<p><bold>Zaragoza, España</bold> <span class="timespan"> | 2019 — 2020</span></p>
 			<ul>
 				<li>Profesor de lengua española e inglesa para jóvenes migrantes.</li>
 				<li>Monitor de actividades ecológicas con adolescentes.</li>
@@ -54,9 +61,9 @@
 		<div id="studies" class="cv-body-section">
 		<h2>Formación</h2>
 			<h4>Grado de Trabajo Social</h4>
-			<p><bold>ESMA, Madrid</bold> <span class="job-timespan"> | 2012 — 2015</span></p>
+			<p><bold>ESMA, Madrid</bold> <span class="timespan"> | 2012 — 2015</span></p>
 			<h4>Licenciatura Profesional</h4>
-			<p><bold>Universidad de la Frontera, México DF</bold> <span class="job-timespan"> | 2011 — 2012</span></p>
+			<p><bold>Universidad de la Frontera, México DF</bold> <span class="timespan"> | 2011 — 2012</span></p>
 		</div>
 		<div id="languages" class="cv-body-section">
 			<h2>Idiomas</h2>
