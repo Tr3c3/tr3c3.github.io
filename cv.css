@@ -1,8 +1,5 @@
 /* Full responsiveness */
 	@media (max-width: 800px) {
-		.mobile  {
-			display: block;
-		}
 		.desktop {
 			display: none;
 		}
@@ -17,9 +14,6 @@
 		.mobile {
 			display: none;
 		}
-		.desktop {
-			display:block;
-		}
 		.cv-body {
 			margin-left: 30%;
 		}
@@ -31,6 +25,11 @@
 	body {
 		margin:0 auto;
 		font-family: "Roboto", sans-serif;
+	}
+	
+	.dark-mode {
+		background-color: black;
+		color: white;
 	}
 
 	.header-block {
@@ -44,17 +43,18 @@
 	}
 
 	.header {
+		color: black;
 		padding: 1px 5px 5px 5px;
 	}
 
-	#navbar-m, #navbar-nm {
+	.navbar {
 		background-color: #FFE5B4;
 		padding: 1px 5px 1px 5px;
 		position: sticky;
 		top: 77px;
 	}
 	
-	#navbar-m a, #navbar-nm a {
+	.navbar a {
 		color: #DE7E5D;
 		text-align: center;
 		padding: 14px 16px;
@@ -63,7 +63,7 @@
 		font-weight: 600;
 	}
 	
-	#navbar-m a:hover, #navbar-nm a:hover {
+	.navbar a:hover {
 		background-color: #DE7E5D;
 		color: #FFE5B4;
 	}
@@ -81,4 +81,7 @@
 		right: 5px;
 		top: 5px;
 		width: 66px;
+	}
+	.timespan {
+		color:gray;
 	}
