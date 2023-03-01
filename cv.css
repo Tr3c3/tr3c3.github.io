@@ -1,24 +1,30 @@
 /* Full responsiveness */
-	@media (max-width: 600px) {
-		.navbar-m, .personal-m  {
+	@media (max-width: 800px) {
+		.mobile  {
 			display: block;
 		}
-		.personal-nm, .navbar-nm {
+		.desktop {
 			display: none;
 		}
 		.cv-body {
 			margin-left: 0;
 		}
+		.cv-body-section {
+			margin-left: 13px;
+		}
 	}
-	@media (min-width: 601px) {
-		.navbar-m, .personal-m {
+	@media (min-width: 801px) {
+		.mobile {
 			display: none;
 		}
-		.personal-nm, .navbar-nm {
+		.desktop {
 			display:block;
 		}
 		.cv-body {
 			margin-left: 30%;
+		}
+		.cv-body-section {
+			margin-left: 5px;
 		}
 	}
 
@@ -29,6 +35,7 @@
 
 	.header-block {
 		background-color: #DFC594;
+		display: grid;
 		padding-bottom: 1px;
 		padding-top: 1px;
 		position: sticky;
@@ -40,20 +47,38 @@
 		padding: 1px 5px 5px 5px;
 	}
 
-	.navbar-m {
+	#navbar-m, #navbar-nm {
 		background-color: #FFE5B4;
 		padding: 1px 5px 1px 5px;
 		position: sticky;
 		top: 77px;
 	}
-	.navbar-nm {
-		background-color: #FFE5B4;
-		padding: 1px 5px 1px 5px;
-		position: sticky;
-		top: 77px;
+	
+	#navbar-m a, #navbar-nm a {
+		color: #DE7E5D;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		font-weight: 600;
 	}
-	.personal-nm {
+	
+	#navbar-m a:hover, #navbar-nm a:hover {
+		background-color: #DE7E5D;
+		color: #FFE5B4;
+	}
+
+
+	#contact-nm {
 		padding: 8px;
 		position: fixed;
 		width: 30%
+	}
+	
+	.profile-pic{
+		border-radius: 50%;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 66px;
 	}
